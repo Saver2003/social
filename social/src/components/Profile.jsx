@@ -11,7 +11,7 @@ const Profile = () => {
         <img
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaOJeQgJS1vwCJ6tj4-OAvWRl8c7IrnRRk7lKLxyBMnJVcVDl5&s"
           alt="ava" className="avatar"/>
-        <div>
+        <div className="ava-info">
           <div className="user-name">
             <p>Alex G.</p>
           </div>
@@ -22,12 +22,29 @@ const Profile = () => {
           </div>
         </div>
       </div>
-      <div>
-        my posts
-        <div>new post</div>
+      <div className="posts">
+        <h4>My posts</h4>
+        <textarea className="text-area"/>
+        <button className="send-button">Send</button>
       </div>
-      <div>post 1</div>
-      <div>post 2</div>
+      <div className="my-post">
+        <div className="ava">
+
+        </div>
+        <p>Anybody here?</p>
+      </div>
+      <div className="my-post">
+        <div className="ava">
+
+        </div>
+        <p>Anybody here?</p>
+      </div>
+      <div className="my-post">
+        <div className="ava">
+
+        </div>
+        <p>Anybody here?</p>
+      </div>
     </div>
   );
 };

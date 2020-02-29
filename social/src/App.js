@@ -11,6 +11,9 @@ function App() {
       <Header/>
       <NavBar/>
       <Profile/>
+      <footer>
+        <p>some footer</p>
+      </footer>
     </div>
   );
 }

@@ -1,0 +1,19 @@
+.content {
+  grid-area: c;
+}
+.content img {
+  max-width: 991px;
+}
+.main_img {
+  object-fit: cover;
+  overflow: hidden;
+  width: 100%;
+  height: 150px;
+  margin-bottom: 15px;
+}
+
+
+
+
+
+

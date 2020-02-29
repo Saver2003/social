@@ -1,0 +1,27 @@
+.text_area {
+  display: block;
+  width: 100%;
+  height: 70px;
+  border: none;
+  background-color: #ebebeb;
+  padding: 15px;
+  line-height: 16px;
+  color: #0a3524;
+  margin-bottom: 10px;
+}
+.send_button {
+  display: block;
+  width: 80px;
+  height: 30px;
+  border: none;
+  border-radius: 2px;
+  background-color: cadetblue;
+  color: azure;
+  position: absolute;
+  right: -30px;
+}
+.posts {
+  width: 75%;
+  position: relative;
+  margin-bottom: 55px;
+}

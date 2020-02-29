@@ -1,0 +1,33 @@
+.my_post {
+  display: flex;
+  margin-bottom: 15px;
+  padding: 10px;
+}
+.my_post p {
+  line-height: 40px;
+  font-size: 18px;
+}
+.ava img {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #3c5c42;
+  margin-right: 20px;
+}
+.like {
+  /*line-height: 40px;*/
+  /*margin-left: 40px;*/
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+.like_hover:hover {
+  color: #3b9411;
+  cursor: pointer;
+}
+.post_wrapper {
+  position: relative;
+  width: 770px;
+  background-color: #f9f9f9;
+}

@@ -1,10 +1,6 @@
 body p {
   padding: 0;
   margin: 0;
-  /*color: azure;*/
-}
-body {
-  /*background-color: #10191c;*/
 }
 .app-wrapper {
   margin: 0 auto;
@@ -15,114 +11,7 @@ body {
   "h h"
   "n c"
 ;
-  grid-template-rows: 70px 1fr;
+  grid-template-rows: 60px 1fr;
     grid-auto-columns: 2fr 10fr;
     grid-gap: 15px;
-}
-.header {
-  grid-area: h;
-  background-color: #283934;
-  height: 60px;
-  margin-bottom: 15px;
-}
-.header img {
-  width: 50px;
-  margin-top: 5px;
-  margin-left: 20px;
-}
-.nav {
-  grid-area: n;
-  background-color: #3c5c42;
-  height: 100vh;
-}
-.nav a {
-  display: block;
-  color: #dae2d7;
-  text-decoration: none;
-  margin-left: 15px;
-  margin-bottom: 5px;
-  line-height: 30px;
-  font-size: 20px;
-}
-.nav a:hover {
-  color: #8bc5ff;
-}
-.nav-main {
-  display: block;
-  margin: 20px 0 30px;
-}
-.content {
-  grid-area: c;
-  /*background-color: #8bc5ff;*/
-}
-.content img {
-  max-width: 991px;
-}
-.main-img {
-  object-fit: cover;
-  overflow: hidden;
-  width: 100%;
-  height: 150px;
-}
-.avatar {
-  margin-right: 20px;
-  width: 100px;
-  height: 100px;
-}
-.ava-wrapper {
-  margin-top: 20px;
-  display: flex;
-}
-.user-name {
-  margin-bottom: 20px;
-  font-weight: bold;
-}
-.personal-info p {
-  font-size: 14px;
-}
-.ava-info {
-  margin-bottom: 15px;
-}
-.text-area {
-  display: block;
-  width: 100%;
-  height: 70px;
-  border: none;
-  background-color: #dae2d7;
-  padding: 15px;
-  line-height: 16px;
-  color: #0a3524;
-  margin-bottom: 10px;
-}
-.send-button {
-  display: block;
-  width: 80px;
-  height: 30px;
-  border: none;
-  border-radius: 2px;
-  background-color: cadetblue;
-  color: azure;
-  position: absolute;
-  right: 0;
-}
-
-.posts {
-  width: 75%;
-  position: relative;
-  margin-bottom: 35px;
-}
-.my-post {
-  display: flex;
-  margin-bottom: 15px;
-}
-.my-post p {
-  line-height: 25px;
-}
-.ava {
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background-color: #3c5c42;
-  margin-right: 20px;
 }

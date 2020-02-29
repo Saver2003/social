@@ -8,7 +8,7 @@ function App() {
         <img src='https://www.freelogodesign.org/Content/img/logo-samples/celtica.png'/>
       </header>
       <nav className="nav">
-        <div><a>Profile</a></div>
+        <div><a href="/">Profile</a></div>
         <div><a>Messages</a></div>
         <div><a>News</a></div>
         <div><a>Music</a></div>

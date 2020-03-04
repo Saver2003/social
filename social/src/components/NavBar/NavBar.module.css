@@ -19,6 +19,6 @@
   display: block;
   margin: 20px 0 30px;
 }
-.item.active a {
+.item a.active {
   color: gold;
 }

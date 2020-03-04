@@ -1,0 +1,79 @@
+.dialogs {
+  display: grid;
+  grid-template-columns: 4fr 8fr;
+}
+
+.dialogs_items {
+  padding: 10px 20px 10px 10px;
+  border-right: 3px solid #6f6e6f;
+}
+
+.dialog {
+  padding: 15px;
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 5px;
+  display: flex;
+  background-color: #e9e8e9;
+}
+.active {
+  color: gold;
+  background-color: #6f6e6f;
+}
+.point {
+  width: 5px;
+  height: 5px;
+  background-color: #3a5940;
+  display: block;
+  position: relative;
+  top: 50%;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+.messages {
+  padding: 10px;
+  margin-left: 15px;
+}
+
+.message {
+  position: relative;
+  display: flex;
+  color: gold;
+  padding: 10px;
+  background-color: #969596;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+.message p {
+  line-height: 40px;
+}
+.ava {
+  display: flex;
+}
+.name {
+  margin-right: 120px;
+  margin-left: 60px;
+  line-height: 40px;
+}
+.msg {
+
+  position: absolute;
+  left: 160px;
+}
+.ava img {
+  position: absolute;
+  left: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #3c5c42;
+  margin-right: 40px;
+}
+.dialog_active {
+  text-decoration: none;
+  color: gold;
+}
+.dialog_link {
+  text-decoration: none;
+  color: #0a3524;
+}

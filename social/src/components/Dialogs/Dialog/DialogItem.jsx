@@ -2,10 +2,11 @@ import React from 'react';
 import style from "../Dialogs.module.css";
 import {NavLink} from "react-router-dom";
 
-const Dialog = props => {
+const DialogItem = props => {
   console.log(props);
+  let path = `/dialogs/${props.id}`;
   return (
-    <NavLink to={`/dialogs/${props.id}`} className={`${props.active ? style.dialog_active : style.dialog_link}`}>
+    <NavLink to={path} className={`${props.active ? style.dialog_active : style.dialog_link}`}>
       <div className={`${style.dialog} + ' ' + ${props.active ? style.active : ''}`}>
         <div>
           <div className={style.point}>{''}</div>
@@ -16,4 +17,4 @@ const Dialog = props => {
   );
 };
 
-export default Dialog;
+export default DialogItem;

@@ -3,51 +3,25 @@ import style from './Dialogs.module.css';
 import DialogItem from "./Dialog/DialogItem";
 import Message from "./Message/Message";
 
-const Dialogs = () => {
+const Dialogs = (props) => {
 
-  let dialogsData = [
-    {id: 1, name: 'Alex'},
-    {id: 2, name: 'Dasha'},
-    {id: 3, name: 'Max'},
-    {id: 4, name: 'Elena'}
-  ];
+  let dialogsElements = props.state.dialogs.map(d => <DialogItem id={d.id}
+                                                                 name={d.name}
+                                                                 key={d.id}/>);
 
-  let messages = [
-    {
-      id: 0,
-      name: 'Alex',
-      message: 'Hi',
-      avatar: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaOJeQgJS1vwCJ6tj4-OAvWRl8c7IrnRRk7lKLxyBMnJVcVDl5&s'
-    },
-    {
-      id: 1,
-      name: 'Dasha',
-      message: 'How are you',
-      avatar: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaOJeQgJS1vwCJ6tj4-OAvWRl8c7IrnRRk7lKLxyBMnJVcVDl5&s'
-    },
-    {
-      id: 2,
-      name: 'Alex',
-      message: 'File',
-      avatar: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaOJeQgJS1vwCJ6tj4-OAvWRl8c7IrnRRk7lKLxyBMnJVcVDl5&s'
-    },
-  ];
-
-  let dialog = dialogsData.map(el => {
-    return <DialogItem id={el.id} name={el.name} key={el.id}/>
-  });
-
-  let message = messages.map(el => {
-    return <Message id={el.id} key={el.id} name={el.name} avatar={el.avatar} msg={el.message}/>
-  });
+  let messagesElements = props.state.messages.map(m => <Message id={m.id}
+                                                                key={m.id}
+                                                                name={m.name}
+                                                                avatar={m.avatar}
+                                                                msg={m.message}/>);
 
   return (
     <div className={style.dialogs}>
       <div className={style.dialogs_items}>
-        {dialog}
+        {dialogsElements}
       </div>
       <div className={style.messages}>
-        {message}
+        {messagesElements}
       </div>
     </div>
   );

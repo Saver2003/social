@@ -3,7 +3,6 @@ import style from "../Dialogs.module.css";
 import {NavLink} from "react-router-dom";
 
 const DialogItem = props => {
-  console.log(props);
   let path = `/dialogs/${props.id}`;
   return (
     <NavLink to={path} className={`${props.active ? style.dialog_active : style.dialog_link}`}>
